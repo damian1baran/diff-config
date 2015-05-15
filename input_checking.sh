@@ -2,8 +2,6 @@
 
 exit_0="[EXIT_SUCCESS] Exiting with *SUCCESS*"
 exit_1="[EXIT_FAILURE] Exiting with *ERROR*"
-match="[DONE] Golden Config is *SAME AS* Current Config"
-mismatch="[DONE] Golden Config *DIFFER FROM* Current Config"
 err1="[ERROR] TOO FEW ARGUMENTS!"
 err2="[ERROR] TOO MANY ARGUMENTS!"
 err3="[ERROR] FILE(S) WAS/WERE NOT FOUND!"
