@@ -26,7 +26,7 @@ output of diff is "echoed" to STDOUT and script returns 10.
 > sh diff_config.sh [golden-config] [current-config]
 
 ##### Return Codes:
-0 - both files are same - string to STDOUT is:
+* 0 - both files are same - string to STDOUT is:
 ```
 echo "[DONE] Golden Config is *SAME AS* Current Config"
 ```
