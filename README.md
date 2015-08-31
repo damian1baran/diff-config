@@ -47,10 +47,10 @@ echo $specific_error && echo $usage
 ```
 "[DONE] Golden Config *DIFFER FROM* Current Config" && echo && diff -dU0 $1 $2
 ```
- 
- 
+``
+``
 ##### Example ```if [ $? -eq 10]```
-[DONE] Golden Config *DIFFER FROM* Current Config
+[DONE] Golden Config \*DIFFER FROM\* Current Config
 
 --- /some-path/some-golden-config-file.cfg	2015-07-01 13:22:58.000000000 +0200
 +++ /some-other-path/some-current-config-file.cfg	2015-07-07 14:31:19.000000000 +0200
