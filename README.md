@@ -11,17 +11,16 @@ http://creativecommons.org/publicdomain/zero/1.0/
 specified files whose paths are supplied to this script via two script arguments
 arg1 and arg2 are same.
 
-* In case argument count is incorrect for this script or one or more arguments doesn't
-represent vaild path to the file or either one or both files doesn't exist at all
+* In case ((argument count is incorrect for this script) or (one or more arguments
+doesn't represent vaild path to file) or ((either one or both files) doesn't exist at all))
 script will return 1.
 
-* If no error occoured (both files supplied via arg1 and arg2 exists) and md5 digest
-is not same (differ) they are compared by diff utility
-and output is provided to STDOUT and return 10.
+* If no error occoured and md5 digest is not same they files are compared by diff utility and
+output is provided to STDOUT and script returns 10.
 
 ## Input arguments description
-> [golden-config] is the original file or "golden configuration" file.
-> [current-config] is actual file or "current configuration" file (with latest modifications).
+[golden-config] is the original file or "golden configuration" file.
+[current-config] is actual file or "current configuration" file (with latest modifications).
 
 Usage:
 > sh diff_config.sh [golden-config] [current-config]
