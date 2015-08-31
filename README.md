@@ -18,14 +18,14 @@ script will return 1.
 * If no error occoured and md5 digest is not same they files are compared by diff utility and
 output is provided to STDOUT and script returns 10.
 
-## Input arguments description
+##### Input arguments description
 [golden-config] is the original file or "golden configuration" file.
 [current-config] is actual file or "current configuration" file (with latest modifications).
 
-Usage:
+##### Usage:
 > sh diff_config.sh [golden-config] [current-config]
 
-Return Codes:
+##### Return Codes:
 0  - both files are same (string to STDOUT is: echo "[EXIT_SUCCESS] Exiting with *SUCCESS*")
 1  - error occurred (string to STDOUT is: echo $specific_error && echo $usage)
       - argument count incorrect
