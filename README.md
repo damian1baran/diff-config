@@ -1,9 +1,9 @@
 # shell_script_diff_config
 
-### Feel free to use this script however you like.
-### License is: CC0 1.0
+##### Feel free to use this script however you like.
+##### License is: CC0 1.0
 
-## More info about license you can find at:
+##### More info about license you can find at:
 http://creativecommons.org/publicdomain/zero/1.0/
 
 ## Description
