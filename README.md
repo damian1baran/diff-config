@@ -53,7 +53,7 @@ sh diff_config.sh \
 /some-path/some-golden-config-file.cfg \
 /some-other-path/some-current-config-file.cfg
 
-[DONE] Golden Config \*DIFFER FROM\* Current Config
+[DONE] Golden Config *DIFFER FROM* Current Config
 
 --- /some-path/some-golden-config-file.cfg	2015-07-01 13:22:58.000000000 +0200
 +++ /some-other-path/some-current-config-file.cfg	2015-07-07 14:31:19.000000000 +0200
