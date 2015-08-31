@@ -19,7 +19,7 @@ script will return 1.
 * If no error occoured and md5 digest is not same files are compared by diff utility and
 output of diff is "echoed" to STDOUT and script returns 10.
 
-##### Input arguments description:
+##### Description of input arguments
 [golden-config] is the original file or "golden configuration" file.
 [current-config] is actual file or "current configuration" file (with latest modifications).
 
