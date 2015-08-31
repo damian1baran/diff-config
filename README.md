@@ -26,10 +26,12 @@ output of diff is "echoed" to STDOUT and script returns 10.
 > sh diff_config.sh [golden-config] [current-config]
 
 ##### Return Codes:
-* 0 - both files are same (string to STDOUT is: echo "[DONE] Golden Config is *SAME AS* Current Config")
-* 1 - error occurred (string to STDOUT is: echo $specific_error && echo $usage)
+* 0 - both files are same - string to STDOUT is:
+> echo "[DONE] Golden Config is *SAME AS* Current Config"
+* 1 - error occurred - string to STDOUT is:
+> echo $specific_error && echo $usage
   * argument count is incorrect
   * one or both files doesn't exists
   * user supplied incorrect paths to files as script arguments
-* 10 - golden file differ from curren config file (stirng to STDOUT is:
-"[DONE] Golden Config *DIFFER FROM* Current Config" && echo && diff -dU0 $1 $2)
+* 10 - golden file differ from curren config file - stirng to STDOUT is:
+> "[DONE] Golden Config *DIFFER FROM* Current Config" && echo && diff -dU0 $1 $2)
