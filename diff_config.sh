@@ -54,18 +54,12 @@ then
     echo $match && echo
     echo $exit_0 && echo
 
-    # Remove current/temporary configuration file
-    rm -f $2
-
     exit 0
 
 elif [ $md5_golden !=  $md5_current ]
 then
     echo $mismatch && echo
     diff -dU0 $1 $2
-
-    # Remove current/temporary configuration file
-    rm -f $2
 
     exit 10
 
