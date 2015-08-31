@@ -1,6 +1,6 @@
 # shell_script_diff_config
 
-##### Feel free to use this script however you like.
+Feel free to use this script however you like.
 ##### License is: CC0 1.0
 
 More info about license you can find at:
