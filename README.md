@@ -19,16 +19,16 @@ script will return 1.
 * If no error occoured and md5 digest is not same files are compared by diff utility and
 output of diff is "echoed" to STDOUT and script returns 10.
 
-< br />
+
 ##### Input arguments description:
 [golden-config] is the original file or "golden configuration" file.
 [current-config] is actual file or "current configuration" file (with latest modifications).
 
-< br />
+
 ##### Usage
 > sh diff_config.sh [golden-config] [current-config]
 
-< br />
+
 ##### Return Codes
 ###### 0 - both files are same - string to STDOUT is:
 ```
@@ -48,7 +48,7 @@ echo $specific_error && echo $usage
 "[DONE] Golden Config *DIFFER FROM* Current Config" && echo && diff -dU0 $1 $2
 ```
 
-< br />
+
 ##### Example ```if [ $? -eq 10]```
 [DONE] Golden Config *DIFFER FROM* Current Config
 
