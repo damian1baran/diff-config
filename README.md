@@ -48,6 +48,7 @@ echo $specific_error && echo $usage
 
 <br>
 ##### Example ```if [ $? -eq 10]```
+> sh diff_config.sh /some-path/some-golden-config-file.cfg /some-other-path/some-current-config-file.cfg
 [DONE] Golden Config \*DIFFER FROM\* Current Config
 
 --- /some-path/some-golden-config-file.cfg	2015-07-01 13:22:58.000000000 +0200
