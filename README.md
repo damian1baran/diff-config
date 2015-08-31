@@ -6,7 +6,7 @@ Feel free to use this script however you like.
 More info about license you can find at:
 http://creativecommons.org/publicdomain/zero/1.0/
 
-## Description
+##### Description
 * This shell script was written to use md5 and diff tool/utility to check if two
 specified files whose paths are supplied to this script via two script arguments
 arg1 and arg2 are same.
@@ -18,14 +18,14 @@ script will return 1.
 * If no error occoured and md5 digest is not same files are compared by diff utility and
 output of diff is "echoed" to STDOUT and script returns 10.
 
-##### Input arguments description
+##### Input arguments description:
 [golden-config] is the original file or "golden configuration" file.
 [current-config] is actual file or "current configuration" file (with latest modifications).
 
-##### Usage:
+##### Usage
 > sh diff_config.sh [golden-config] [current-config]
 
-##### Return Codes:
+##### Return Codes
 ###### 0 - both files are same - string to STDOUT is:
 ```
 echo "[DONE] Golden Config is *SAME AS* Current Config"
@@ -43,3 +43,13 @@ echo $specific_error && echo $usage
 ```
 "[DONE] Golden Config *DIFFER FROM* Current Config" && echo && diff -dU0 $1 $2
 ```
+
+##### Example ```if [ $? -eq 10]```
+[DONE] Golden Config *DIFFER FROM* Current Config
+
+--- /some-path/some-golden-config-file.cfg	2015-07-01 13:22:58.000000000 +0200
++++ /some-other-path/some-current-config-file.cfg	2015-07-07 14:31:19.000000000 +0200
+@@ -1 +1 @@
+-unset fee protection enable
++unset key protection enable
+
