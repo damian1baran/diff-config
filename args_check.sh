@@ -2,6 +2,8 @@
 
 exit_0="[EXIT_SUCCESS] Exiting with *SUCCESS*"
 exit_1="[EXIT_FAILURE] Exiting with *ERROR*"
+match="[DONE] Golden Config is *SAME AS* Current Config"
+mismatch="[DONE] Golden Config *DIFFER FROM* Current Config"
 err1="[ERROR] TOO FEW ARGUMENTS!"
 err2="[ERROR] TOO MANY ARGUMENTS!"
 err3="[ERROR] FILE(S) WAS/WERE NOT FOUND!"
@@ -34,6 +36,39 @@ then
     echo
     echo $exit_1 && echo
     exit 1
+fi
+
+###############################################################################
+# 2. Check of MD5 Sum of Golden and Current Configuration Files
+###############################################################################
+
+md5_golden=`md5sum $1 | cut -d " " -f 1`
+md5_current=`md5sum $2 | cut -d " " -f 1`
+
+###############################################################################
+# 3. Check if golden and current configuration files are same or aren't
+###############################################################################
+
+if [ $md5_golden =  $md5_current ]
+then
+    echo $match && echo
+    echo $exit_0 && echo
+
+    # Remove current/temporary configuration file
+    rm -f $2
+
+    exit 0
+
+elif [ $md5_golden !=  $md5_current ]
+then
+    echo $mismatch && echo
+    diff -dU0 $1 $2
+
+    # Remove current/temporary configuration file
+    rm -f $2
+
+    exit 10
+
 fi
 
 exit 0
