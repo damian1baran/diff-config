@@ -47,8 +47,8 @@ echo $specific_error && echo $usage
 ```
 "[DONE] Golden Config *DIFFER FROM* Current Config" && echo && diff -dU0 $1 $2
 ```
-**
-**
+* *
+* *
 ##### Example ```if [ $? -eq 10]```
 [DONE] Golden Config \*DIFFER FROM\* Current Config
 
