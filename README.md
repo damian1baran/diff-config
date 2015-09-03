@@ -20,8 +20,8 @@ script will return 1.
 output of diff is "echoed" to STDOUT and script returns 10.
 
 ##### Description of input arguments
-[golden-config] is the original file or "golden configuration" file.
-[current-config] is actual file or "current configuration" file (with latest modifications).
+>[golden-config] is the original file or "golden configuration" file.
+>[current-config] is actual file or "current configuration" file (with latest modifications).
 
 ##### Usage
 > sh diff_config.sh [golden-config] [current-config]
