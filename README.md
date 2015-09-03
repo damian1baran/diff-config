@@ -8,7 +8,7 @@ http://creativecommons.org/publicdomain/zero/1.0/
 
 <br>
 ##### Description
-* This shell script was written to use md5 and diff tool/utility to check if two
+* This shell script was written to use md5sum and diff tool/utility to check if two
 specified files whose paths are supplied to this script via two script arguments
 arg1 and arg2 are same.
 
